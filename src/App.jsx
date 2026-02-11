@@ -11,12 +11,20 @@ const App = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 7000)
+    // prevent scroll while loading
+    if (loading) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
 
-    return () => clearTimeout(timer)
-  }, [])
+    const timer = setTimeout(() => setLoading(false), 7000)
+
+    return () => {
+      clearTimeout(timer)
+      document.body.style.overflow = 'auto' // cleanup
+    }
+  }, [loading])
   
   return (
     <div className='App'>
