@@ -47,7 +47,7 @@ const Testimonials = () => {
         {/* <p>Don't take our word for it. Take theirs!</p> */}
       </div>
 
-    <Swiper modules={[Navigation, Autoplay]} loop={true} navigation autoplay={{delay: 3500, disableOnInteraction: false,}}
+    <Swiper modules={[Navigation, Autoplay]} loop={true} navigation autoplay={{delay: 2500, disableOnInteraction: true,}}
         spaceBetween={30} breakpoints={{0: {slidesPerView: 1,}, 768: {slidesPerView: 2,},1200: {slidesPerView: 3,},}}
         className="testimonial-slider"
       >
