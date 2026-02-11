@@ -9,12 +9,6 @@ import "./Testimonials.css";
 const Testimonials = () => {
   const dataClient = [
     {
-      imgSrc: "/ErikS.jpeg",
-      client: "Erik Strong",
-      review:
-        "I continuously re-hire Anwar because he is an absolute professional. His attentiveness and attention to detail are unmatched. Another great project!",
-    },
-    {
       imgSrc: "/PaulP.jpeg",
       client: "Paul Peterson",
       review:
@@ -25,6 +19,12 @@ const Testimonials = () => {
         client: "Daniel",
         review:
           "Anwar's been great. I worked with him for 3 months on QuickBooks, he helped me get everything organized. Taught me many things. I will continue to work with him. Highly recommend!",
+    },
+    {
+      imgSrc: "/ErikS.jpeg",
+      client: "Erik Strong",
+      review:
+        "I continuously re-hire Anwar because he is an absolute professional. His attentiveness and attention to detail are unmatched. Another great project!",
     },
     {
         imgSrc: "/DavidK.jpeg",
