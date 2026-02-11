@@ -18,7 +18,7 @@ const App = () => {
       document.body.style.overflow = 'auto'
     }
 
-    const timer = setTimeout(() => setLoading(false), 7000)
+    const timer = setTimeout(() => setLoading(false), 5500)
 
     return () => {
       clearTimeout(timer)
