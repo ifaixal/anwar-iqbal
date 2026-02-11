@@ -3,6 +3,11 @@ import { ReactTyped } from "react-typed";
 import './Hero.css'
 
 const Hero = () => {
+  const handleClickHero = () => {
+    window.location.href = 
+      "mailto:ana.anwar420@gmail.com?subject=Avail your services&body=Hello Anwar, I saw your accounting solutions and wanted to avail your service."
+  }
+
   return (
     <div className='HeroSection' id='Home'>
         <div className="leftContainer">
@@ -18,12 +23,12 @@ const Hero = () => {
           </div>
 
           <div className="CTA">
-            <button >Let's Discuss!</button>
+            <button onClick={handleClickHero}>Let's Discuss!</button>
           </div>
         </div>
 
         <div className="rightContainer">
-          <img src="/Vector - 3.png" alt="img"/>
+          <img loading='lazy' src="/Vector - 3.png" alt="img"/>
         </div>
     </div>
   )
